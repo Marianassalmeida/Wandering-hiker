@@ -1,35 +1,56 @@
 /*------------General--------------------*/
 
-
+body, a, p, h1, h2, h3, h4, h5, h6{
+    font-family: "Rubik", "Nunito", "Open Sans", sans-serif;
+}
 
 
 
 
 /*------------Home Page--------------------*/
 
+    /*---Main Menu---*/
+
+    #mainMenu > nav > div{
+    padding-left:50px;
+    padding-right:50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   /* background-color: rgb(237 237 237);*/
+    }
+
+    .navbar-brand{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #mainMenu > nav > div > a > h1{
+        padding-left: 10px;
+        color: #4c8f56;
+        font-weight: 700;
+    }
+
+    .nav-item{
+        font-size: 20px;
+    }
+
+    .nav-link{
+        color: #fff !important;
+    }
+
+    #mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(1) > a, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a, #mainMenu > nav > div > ul > li:nth-child(3) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a{
+        background-color: #4c8f56;
+        border-radius: 15px;
+        margin: 5px;
+    }
+
+    #mainMenu > nav > div > ul > li:nth-child(1) > a:hover, #mainMenu > nav > div > ul > li:nth-child(2) > a:hover, #mainMenu > nav > div > ul > li:nth-child(3) > a:hover{
+        background-color: #89c592;
+    }
+
+    #mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a.active{
+    
+    }
 
 
-/*---Main Menu---*/
-
-.bg-body-tertiary {
-    --bs-bg-opacity: 0 !important;
-}
-
-#mainMenu > nav > div{
-padding-left:10px;
-padding-right:10px;
-}
-
-.nav-item{
-    font-size: 20px;
-}
-
-.nav-link{
-    color: black !important;
-}
-
-#mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a.active{
-    color:tomato !important;
-    text-decoration: underline !important;
-}
 
