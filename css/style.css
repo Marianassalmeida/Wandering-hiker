@@ -1,0 +1,35 @@
+/*------------General--------------------*/
+
+
+
+
+
+
+/*------------Home Page--------------------*/
+
+
+
+/*---Main Menu---*/
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0 !important;
+}
+
+#mainMenu > nav > div{
+padding-left:10px;
+padding-right:10px;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+#mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a.active{
+    color:tomato !important;
+    text-decoration: underline !important;
+}
+
