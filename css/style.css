@@ -10,8 +10,12 @@ body, a, p, h1, h2, h3, h4, h5, h6{
 /*------------Home Page--------------------*/
 
     /*---Main Menu---*/
+    #mainMenu{
+        border-bottom: solid 1px #3d3d3d;
+        margin-bottom: 20px;
+    }
 
-    #mainMenu > nav > div{
+    #mainMenu > nav > div, #Footer > nav > div{
     padding-left:50px;
     padding-right:50px;
     padding-top: 20px;
@@ -25,6 +29,12 @@ body, a, p, h1, h2, h3, h4, h5, h6{
     }
 
     #mainMenu > nav > div > a > h1{
+        padding-left: 10px;
+        color: #4c8f56;
+        font-weight: 700;
+    }
+
+    #Footer > nav > div > a > h3{
         padding-left: 10px;
         color: #4c8f56;
         font-weight: 700;
