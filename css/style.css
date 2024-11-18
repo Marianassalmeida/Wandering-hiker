@@ -12,7 +12,6 @@ body, a, p, h1, h2, h3, h4, h5, h6{
     /*---Main Menu---*/
     #mainMenu{
         border-bottom: solid 1px rgb(228, 228, 228);
-        margin-bottom: 20px;
     }
 
     #Footer{
@@ -35,13 +34,13 @@ body, a, p, h1, h2, h3, h4, h5, h6{
 
     #mainMenu > nav > div > a > h1{
         padding-left: 10px;
-        color: #4c8f56;
+        color: rgb(37, 37, 37);
         font-weight: 700;
     }
 
     #Footer > nav > div > a > h3{
         padding-left: 10px;
-        color: #4c8f56;
+        color: rgb(37, 37, 37);
         font-weight: 700;
     }
 
@@ -63,8 +62,21 @@ body, a, p, h1, h2, h3, h4, h5, h6{
         background-color: #89c592;
     }
 
-    #mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a.active{
+    /* #mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a.active{
     
+    } */
+
+    .container-fluid{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+
+    body > div.container.text-center > div > div:nth-child(1), body > div.container.text-center > div > div:nth-child(2), body > div.container.text-center > div > div:nth-child(3){
+        background-color: #d5e9ec;
+        border-radius: 20px;
+        height: 500px;
+        margin:10px;
     }
 
 
