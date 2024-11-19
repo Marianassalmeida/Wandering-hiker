@@ -1,7 +1,12 @@
 /*------------General--------------------*/
 
-body, a, p, h1, h2, h3, h4, h5, h6{
-    font-family: "League Spartan", "Rubik", "Nunito", "Open Sans", sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "League Spartan", "Open Sans", sans-serif;   
+}
+
+p, a {
+    font-family: "Rubik", "Nunito", "Open Sans", sans-serif;
 }
 
 
@@ -9,7 +14,7 @@ body, a, p, h1, h2, h3, h4, h5, h6{
 
 /*------------Home Page--------------------*/
 
-    /*---Main Menu---*/
+    /*---Main Menu & Footer---*/
     #mainMenu{
         border-bottom: solid 1px rgb(228, 228, 228);
     }
@@ -24,7 +29,7 @@ body, a, p, h1, h2, h3, h4, h5, h6{
     padding-right:50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #ffff;
+    background-color: #89c592;
     }
 
     .navbar-brand{
@@ -49,35 +54,83 @@ body, a, p, h1, h2, h3, h4, h5, h6{
     }
 
     .nav-link{
-        color: #fff !important;
+        color: #000 !important;
     }
 
     #mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(1) > a, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a, #mainMenu > nav > div > ul > li:nth-child(3) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a{
-        background-color: #4c8f56;
+        background-color: #fff;
         border-radius: 15px;
         margin: 5px;
     }
 
     #mainMenu > nav > div > ul > li:nth-child(1) > a:hover, #mainMenu > nav > div > ul > li:nth-child(2) > a:hover, #mainMenu > nav > div > ul > li:nth-child(3) > a:hover{
-        background-color: #89c592;
+        background-color: #fff;
+    }
+    /*------------------*/
+
+
+    /*---Main Boxes & Title---*/
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 0 !important;
     }
 
-    /* #mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a.active{
-    
-    } */
+    .col.titleBoxes{
+        margin-top: 150px;
+    }
+
+    .col.titleBoxes > h1{
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .hr-lines:before {
+        content: " ";
+        display: block;
+        height: 2px;
+        width: 900px;
+        position: absolute;
+        top: 50%;
+        background: #89c592;
+        right: 550px;
+    }
+
+      .hr-lines{
+        position: relative;
+        /*  new lines  */
+        max-width: 500px;
+        margin: 100px auto;
+        text-align: center;
+      }
+
+      .hr-lines{
+        position: relative;
+      }
+
+      .hr-lines:after {
+        content: " ";
+        height: 2px;
+        width: 900px;
+        background: #89c592;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 550px;
+    }
 
     .container-fluid{
         margin-top: 50px;
         margin-bottom: 100px;
     }
 
-
-    body > div.container.text-center > div > div:nth-child(1), body > div.container.text-center > div > div:nth-child(2), body > div.container.text-center > div > div:nth-child(3){
-        background-color: #d5e9ec;
+    .col.box1, .col.box2, .col.box3{
+        background-color: #deeaf6;
         border-radius: 20px;
-        height: 500px;
+        height: 600px;
         margin:10px;
     }
-
-
+    
+    .col.box1 > img, .col.box2 > img , .col.box3 > img {
+        margin: 100px 10px 80px 10px;
+        
+    }
 
