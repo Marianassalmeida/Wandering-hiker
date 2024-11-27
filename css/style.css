@@ -32,6 +32,16 @@ p, a {
     background-color: #89c592;
     }
 
+    .container-fluid{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 0 !important;
+    }
+
     .navbar-brand{
         display: flex;
         align-items: flex-end;
@@ -69,21 +79,18 @@ p, a {
     /*------------------*/
 
 
-    /*---Main Boxes & Title---*/
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        --bs-gutter-x: 0 !important;
-    }
-
-    .col.titleBoxes{
+    /*---Hike Steps Boxes & Title---*/
+    
+    .col.titleStepsBoxes{
         margin-top: 150px;
     }
 
-    .col.titleBoxes > h1{
+    .col.titleStepsBoxes > h1{
         font-weight: 700;
         text-align: center;
     }
 
-    .hr-lines:before {
+    .hr-lines1:before {
         content: " ";
         display: block;
         height: 2px;
@@ -94,7 +101,7 @@ p, a {
         right: 550px;
     }
 
-      .hr-lines{
+      .hr-lines1{
         position: relative;
         /*  new lines  */
         max-width: 500px;
@@ -102,11 +109,11 @@ p, a {
         text-align: center;
       }
 
-      .hr-lines{
+      .hr-lines1{
         position: relative;
       }
 
-      .hr-lines:after {
+      .hr-lines1:after {
         content: " ";
         height: 2px;
         width: 900px;
@@ -117,20 +124,78 @@ p, a {
         left: 550px;
     }
 
-    .container-fluid{
-        margin-top: 50px;
-        margin-bottom: 100px;
-    }
 
-    .col.box1, .col.box2, .col.box3{
+    .col.Stepsbox1, .col.Stepsbox2, .col.Stepsbox3{
         background-color: #deeaf6;
         border-radius: 20px;
-        height: 600px;
+        height: 500px;
         margin:10px;
     }
     
-    .col.box1 > img, .col.box2 > img , .col.box3 > img {
-        margin: 100px 10px 80px 10px;
+    .col.Stepsbox1 > img, .col.Stepsbox2 > img , .col.Stepsbox3 > img {
+        margin: 50px 10px 50px 10px;
         
     }
 
+
+    /*---Cities Boxes & Title---*/
+
+    .hr-lines2:before {
+        content: " ";
+        display: block;
+        height: 2px;
+        width: 900px;
+        position: absolute;
+        top: 50%;
+        background: #2d938d;
+        right: 550px;
+    }
+
+      .hr-lines2{
+        position: relative;
+        /*  new lines  */
+        max-width: 500px;
+        margin: 100px auto;
+        text-align: center;
+      }
+
+      .hr-lines2{
+        position: relative;
+      }
+
+      .hr-lines2:after {
+        content: " ";
+        height: 2px;
+        width: 900px;
+        background: #2d938d;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 550px;
+    }
+
+    .col.Citybox1, .col.Citybox2, .col.Citybox3, .col.Citybox4, .col.Citybox5, .col.Citybox6{
+        background-color: #deeaf6;
+        border-radius: 20px;
+        height: 500px;
+        margin:10px;
+    }
+    
+    .col.Citybox1 > h5, .col.Citybox2 > h5, .col.Citybox3 > h5, .col.Citybox4 > h5, .col.Citybox5 > h5, .col.Citybox1 > h5{
+        text-align: center;
+        margin-top:30px;
+        margin-left:10px;
+
+    }
+
+    .col.Citybox1 > img{
+        margin: 20px 10px 20px 10px;
+        /* margin-bottom: 20px; */
+        
+    }
+
+    .col.Citybox1:hover, .col.Citybox2:hover, .col.Citybox3:hover, .col.Citybox4:hover, .col.Citybox5:hover, .col.Citybox6:hover{
+        background-color: #ecf4fd;
+    }
+
+   
