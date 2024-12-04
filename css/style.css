@@ -81,7 +81,7 @@ p, a {
 
     /*---Hike Steps Boxes & Title---*/
     
-    .col.titleStepsBoxes{
+    #titleStepsBoxes{
         margin-top: 150px;
     }
 
@@ -174,28 +174,38 @@ p, a {
         left: 550px;
     }
 
-    .col.Citybox1, .col.Citybox2, .col.Citybox3, .col.Citybox4, .col.Citybox5, .col.Citybox6{
+    #titleCityBoxes{
+        margin-top: 150px;
+    }
+    
+    .CityBoxes, .HikeStepsBoxes{
+        margin: 50px 0px 50px 0px;
+    }
+
+    .col.Citybox1, .col.Citybox2, .col.Citybox3{
         background-color: #deeaf6;
         border-radius: 20px;
         height: 500px;
         margin:10px;
     }
+
+    .col.Citybox1 > a > img, .col.Citybox2 > a > img, .col.Citybox3 > a > img{
+        margin: 20px 10px 20px 10px;
+        border-radius:20px;
+    }
     
-    .col.Citybox1 > h5, .col.Citybox2 > h5, .col.Citybox3 > h5, .col.Citybox4 > h5, .col.Citybox5 > h5, .col.Citybox1 > h5{
+    .col.Citybox1 > h5, .col.Citybox2 > h5, .col.Citybox3 > h5{
         text-align: center;
         margin-top:30px;
         margin-left:10px;
-
     }
 
-    .col.Citybox1 > img{
-        margin: 20px 10px 20px 10px;
-        /* margin-bottom: 20px; */
-        
+    .Citybox2 > h3, .Citybox3 > h3{
+        padding-bottom: 35px;
     }
 
-    .col.Citybox1:hover, .col.Citybox2:hover, .col.Citybox3:hover, .col.Citybox4:hover, .col.Citybox5:hover, .col.Citybox6:hover{
-        background-color: #ecf4fd;
+    .col.Citybox1:hover, .col.Citybox2:hover, .col.Citybox3:hover{
+        background-color: #f1f7ff;
+        mix-blend-mode: luminosity;
     }
 
-   
