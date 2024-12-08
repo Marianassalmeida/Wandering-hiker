@@ -1,0 +1,50 @@
+
+/*---About Me Details---*/
+
+.PageTitle{
+    margin-top: 100px;
+}
+
+.DetailsBox{
+    background-color: #deeaf6;
+    border-radius: 20px;
+    margin: 50px 100px 100px 100px;
+}
+
+.Content{
+    padding: 40px;
+}
+
+.DetailsText{
+    text-align: justify;
+    align-content: center;
+    margin-right: 100px;
+}
+
+.DetailsText > p > span{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.FormButton{
+    margin-bottom: 100px;
+}
+
+.FormButton > button{
+border: 1px solid #70b57b;
+background-color: #70b57b;
+border-radius: 20px;
+padding: 10px;
+margin: 10px;
+width: 200px;
+}
+
+.FormButton > button:hover{
+    background-color: #89c592;
+    border: 1px solid #89c592;
+}
+
+.FormButton > button > a{
+    color:#ffff;
+}
+

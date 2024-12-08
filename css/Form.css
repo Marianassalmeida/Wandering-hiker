@@ -1,0 +1,46 @@
+
+.PageTitle {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#form1{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+}
+
+#form1 > p:nth-child(1) > label, #form1 > p:nth-child(2) > label {
+    padding-right: 50px;
+}
+
+#form1 > p:nth-child(3) > label{
+    padding-right: 25px;
+}
+
+#form1 > p:nth-child(1), #form1 > p:nth-child(2), #form1 > p:nth-child(3){
+text-align: left;
+}
+
+
+#form1 > button{
+    border: 1px solid #70b57b;
+    background-color: #70b57b;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    }
+    
+#form1 > button:hover{
+   background-color: #89c592;
+    border: 1px solid #89c592;
+}
+    
+#form1 > button {
+    color:#ffff;
+    text-decoration: underline #fff;
+}
+
+#msg, #mail, #name{
+    width: 250px;
+}
