@@ -27,17 +27,12 @@ p, a {
     #mainMenu > nav > div, #Footer > nav > div{
     padding-left:50px;
     padding-right:50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #89c592;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffff;
     }
 
-    .container-fluid{
-        margin-top: 50px;
-        margin-bottom: 100px;
-    }
-
-
+    
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         --bs-gutter-x: 0 !important;
     }
@@ -60,20 +55,13 @@ p, a {
     }
 
     .nav-item{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .nav-link{
-        color: #000 !important;
+        color: #000 !important; 
     }
 
-    #mainMenu > nav > div > ul > li:nth-child(1) > a.active, #mainMenu > nav > div > ul > li:nth-child(1) > a, #mainMenu > nav > div > ul > li:nth-child(2) > a.active, #mainMenu > nav > div > ul > li:nth-child(2) > a, #mainMenu > nav > div > ul > li:nth-child(3) > a.active, #mainMenu > nav > div > ul > li:nth-child(3) > a{
-        background-color: #fff;
-        border-radius: 15px;
-        margin: 5px;
+    .nav-item:hover{
+        text-decoration: underline;
     }
-
-    #mainMenu > nav > div > ul > li:nth-child(1) > a:hover, #mainMenu > nav > div > ul > li:nth-child(2) > a:hover, #mainMenu > nav > div > ul > li:nth-child(3) > a:hover{
-        background-color: #fff;
-    }
-    /*------------------*/

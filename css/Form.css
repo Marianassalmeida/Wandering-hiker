@@ -10,12 +10,19 @@
     justify-content: center;
 }
 
-#form1 > p:nth-child(1) > label, #form1 > p:nth-child(2) > label {
+#form1 > p:nth-child(1) > label {
+    padding-right: 47px;
+    vertical-align: top;
+}
+
+#form1 > p:nth-child(2) > label{
     padding-right: 50px;
+    vertical-align: top;
 }
 
 #form1 > p:nth-child(3) > label{
     padding-right: 25px;
+    vertical-align: top;
 }
 
 #form1 > p:nth-child(1), #form1 > p:nth-child(2), #form1 > p:nth-child(3){
