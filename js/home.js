@@ -1,22 +1,21 @@
-const track = document.querySelector('.carousel-track');
-        const items = Array.from(track.children);
-        const nextButton = document.querySelector('.next');
-        const prevButton = document.querySelector('.prev');
-        let currentIndex = 0;
+let slideIndex = 0;
 
-        function updateCarousel() {
-            const itemWidth = items[0].getBoundingClientRect().width;
-            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-        }
+function showDivs(n) {
+  let slides = document.getElementsByClassName("mySlides");
+  
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex].style.display = "block";
+}
 
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            updateCarousel();
-        });
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            updateCarousel();
-        });
-
-        window.addEventListener('resize', updateCarousel);
+// Initialize the first image
+showDivs(slideIndex);
