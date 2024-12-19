@@ -219,3 +219,7 @@
       button:hover {
         background-color: #89c592;
       }
+
+      button > a{
+        color: white;
+      }
