@@ -1,136 +1,151 @@
 
-    /*---Hike Steps Boxes & Title---*/
+    /*----------header slider-----------*/
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background-color: #333;
+        color: #fff;
+    }
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height:600px;
+    }
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        display: block !important;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        opacity: 0.7;
+    }
+    .carousel-item h2 {
+        margin: 15px 0 10px;
+        font-size: 24px;
+    }
+    .carousel-item p {
+        font-size: 16px;
+    }
+    .carousel-item button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #333;
+        background-color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .carousel-item button:hover {
+        background-color: #ddd;
+    }
+    .carousel-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    .carousel-nav button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .carousel-nav button:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .carousel-item h2 {
+            font-size: 20px;
+        }
+        .carousel-item p {
+            font-size: 14px;
+        }
+        .carousel-item button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
 
+    /*----------intro text-----------*/
 
-    #titleStepsBoxes{
+    .Introtext{
         margin-top: 150px;
-    }
-
-    .col.titleStepsBoxes > h1{
-        font-weight: 700;
-        text-align: center;
-    }
-
-    .hr-lines1:before {
-        content: " ";
-        display: block;
-        height: 2px;
-        width: 900px;
-        position: absolute;
-        top: 50%;
-        background: #89c592;
-        right: 400px;
-    }
-
-      .hr-lines1{
-        position: relative;
-        /*  new lines  */
-        max-width: 500px;
-        margin: 100px auto;
-        text-align: center;
-      }
-
-      .hr-lines1{
-        position: relative;
-      }
-
-      .hr-lines1:after {
-        content: " ";
-        height: 2px;
-        width: 900px;
-        background: #89c592;
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 400px;
-    }
-
-
-    .col.Stepsbox1, .col.Stepsbox2, .col.Stepsbox3{
-        background-color: #deeaf6;
-        border-radius: 20px;
-        height: 500px;
-        margin:10px;
-    }
-    
-    .col.Stepsbox1 > img, .col.Stepsbox2 > img , .col.Stepsbox3 > img {
-        margin: 50px 10px 50px 10px;
-        
-    }
-
-
-    /*---Cities Boxes & Title---*/
-
-    .hr-lines2:before {
-        content: " ";
-        display: block;
-        height: 2px;
-        width: 900px;
-        position: absolute;
-        top: 50%;
-        background: #2d938d;
-        right: 550px;
-    }
-
-      .hr-lines2{
-        position: relative;
-        /*  new lines  */
-        max-width: 500px;
-        margin: 100px auto;
-        text-align: center;
-      }
-
-      .hr-lines2{
-        position: relative;
-      }
-
-      .hr-lines2:after {
-        content: " ";
-        height: 2px;
-        width: 900px;
-        background: #2d938d;
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 550px;
     }
 
     #titleCityBoxes{
         margin-top: 150px;
     }
     
-    .CityBoxes, .HikeStepsBoxes{
-        margin: 50px 0px 50px 0px;
+    /*----------img gallery-----------*/
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        width: 90%;
+        max-width: 1200px;
     }
 
-    .col.Citybox1, .col.Citybox2, .col.Citybox3{
-        background-color: #deeaf6;
-        border-radius: 20px;
-        height: 500px;
-        margin:10px;
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .col.Citybox1 > a > img, .col.Citybox2 > a > img, .col.Citybox3 > a > img{
-        margin: 20px 10px 20px 10px;
-        border-radius:20px;
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
     }
-    
-    .col.Citybox1 > h5, .col.Citybox2 > h5, .col.Citybox3 > h5{
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay p {
+        font-size: 18px;
         text-align: center;
-        margin-top:30px;
-        margin-left:10px;
+        margin: 0;
     }
-
-    .Citybox2 > h3, .Citybox3 > h3{
-        padding-bottom: 35px;
-    }
-
-    .col.Citybox1:hover, .col.Citybox2:hover, .col.Citybox3:hover{
-        background-color: #f1f7ff;
-        mix-blend-mode: luminosity;
-    }
-
-
-
-    /*--------------------------*/
-
